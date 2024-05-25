@@ -13,8 +13,20 @@
     <title>Order Online</title>
 </head>
 <body>
-    <div id="menuBG">
+    <div id="menu">
         <h1> <img src="images/camera.png" id="rotateLeft"> Say Cheese Pizzeria <img src="images/camera.png" id="rotateRight"> </h1>
+
+        <input type="button" value="Click here to place your order" id="order" onclick="getReceipt()">
+        <form id="formMenu">
+            <div class="left">
+                <h3>Size</h3>
+                <input type="radio" name="Size" class="size" value="Personal Pizza">10" Personal <br>
+                <input type="radio" name="Size" class="size" value="Small Pizza">12" Small <br>
+                <input type="radio" name="Size" class="size" value="Medium Pizza">14” Medium <br>
+                <input type="radio" name="Size" class="size" value="Large Pizza">16" Large <br>
+                <input type="radio" name="Size" class="size" value="Extra Large Pizza">18" Extra Large <br>
+            </div>
+        </form>
     </div>
     
 </body>
