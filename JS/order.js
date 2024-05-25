@@ -6,7 +6,7 @@ function getReceipt() {
     let sizeArray = document.getElementsByClassName("size");
     for (let i = 0; i < sizeArray.length; i++) {
         id (sizeArray[i].checked) {
-            let selectedSize = sizeArray[i].ariaValueMax;
+            let selectedSize = sizeArray[i].value;
             text = heading + "<br>" + selectedSize;
         }
     }
