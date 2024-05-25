@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/style.css">
     
     <script src="JS/order.js" defer></script>
@@ -26,6 +27,20 @@
                     <input type="radio" name="Size" class="size" value="Medium Pizza">14” Medium <br>
                     <input type="radio" name="Size" class="size" value="Large Pizza">16" Large <br>
                     <input type="radio" name="Size" class="size" value="Extra Large Pizza">18" Extra Large <br>
+                </div>
+
+                <div class="right">
+                    <h3>Meats</h3>
+                    <!-- <p>$2 each</p> -->
+                    <input type="checkbox" name="Topping" class="toppings" value="Anchovy">Anchovies <br>
+                    <input type="checkbox" name="Topping" class="toppings" value="Canadian Bacon">Canadian Bacon <br>
+                    <input type="checkbox" name="Topping" class="toppings" value="Diced Chicken">Diced Chicken <br>
+                    <input type="checkbox" name="Topping" class="toppings" value="Ground Beef">Ground Beef <br>
+                    <input type="checkbox" name="Topping" class="toppings" value="Meatballs">Meatballs <br>
+                    <input type="checkbox" name="Topping" class="toppings" value="Pepperoni">Pepperoni <br>
+                    <input type="checkbox" name="Topping" class="toppings" value="Pulled Pork">Pulled Pork <br>
+                    <input type="checkbox" name="Topping" class="toppings" value="Sausage">Sausage <br>
+                    <input type="checkbox" name="Topping" class="toppings" value="Shrimp">Shrimp <br>
                 </div>
             </form>
             <input type="button" value="Click here to place your order" id="order" onclick="getReceipt()">
