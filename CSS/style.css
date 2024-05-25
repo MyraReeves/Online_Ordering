@@ -24,6 +24,19 @@ h3 {
     font-size: 16pt;
 }
 
+#menu {
+    width: 400px;
+    height: 470px;
+    margin: 10px auto;
+    background-color: rgba(253, 255, 147, 0.215);
+    border: dashed 1px rgb(255, 94, 0);
+}
+
+#form {
+    width: 400px;
+    height: 200px;
+}
+
 .left {
     width: 200px;
     height: 200px;
@@ -32,5 +45,16 @@ h3 {
     border-radius: 8px;
     background-color: rgba(255, 149, 0, 0.3);
     float: left;
+    margin: 10px;
 }
 
+#order {
+    margin: 15px 0px 0px 100px;
+    height: 30px;
+    cursor: pointer;
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2)
+}
+
+#order:hover {
+    background-color:  rgb(255, 136, 0);
+}
