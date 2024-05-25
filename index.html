@@ -19,7 +19,7 @@
     </header>
     <main>
         <div id="menu">
-            <form id="form">
+            <form class="form">
                 <div class="left">
                     <h3>Size</h3>
                     <input type="radio" name="Size" class="size" value="Personal Pizza">10" Personal <br>
@@ -43,12 +43,16 @@
                     <input type="checkbox" name="Topping" class="toppings" value="Shrimp">Shrimp <br>
                 </div>
 
+            </form>
+
+            <input type="button" value="Click here to place your order" id="order" onclick="getReceipt()">
+
+            <form class="form">
                 <div id="cart">
                     <div id="showText"></div>
                     <div id="totalPrice"></div>
                 </div>
             </form>
-            <input type="button" value="Click here to place your order" id="order" onclick="getReceipt()">
         </div>
     </main>
     
