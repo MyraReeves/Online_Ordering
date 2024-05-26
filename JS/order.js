@@ -5,11 +5,19 @@ function getReceipt() {
     let runningTotal = 0;
     let sizeTotal = 0;
     let sizeArray = document.getElementsByClassName("size");
+    let sauceArray = document.getElementsByClassName("sauce");
     
     for (let i = 0; i < sizeArray.length; i++) {
         if (sizeArray[i].checked) {
             var selectedSize = sizeArray[i].value;
-            text = "<br> <hr>" + heading + "<br>" + selectedSize + " with: <br>";
+            text = "<br> <hr>" + heading + "<br>" + selectedSize + "<br>";
+        }
+    }
+
+    for (let j = 0; j < sauceArray.length; j++) {
+        if (sauceArray[j].checked) {
+            var sauceChoice = sauceArray[j].value;
+            text = text + sauceChoice + " sauce <br> <br>";
         }
     }
 
@@ -22,7 +30,7 @@ function getReceipt() {
     runningTotal = sizeTotal;
 
     console.log("Receipt so far = " + text);
-    console.log(selectedSize + " = $"+sizeTotal + ".00");
+    console.log(selectedSize + " with " + sauceChoice + " = $"+sizeTotal + ".00");
     console.log("Subtotal: $" + runningTotal + ".00");
     
     getToppings(runningTotal, text);
@@ -44,12 +52,12 @@ function getToppings(runningTotal, text) {
     let toppingCount = selectedTopping.length;
 
     // First topping is "free"
-    if (toppingCount > 1) { toppingTotal = (toppingCount - 1); }
+    if (toppingCount > 1) { toppingTotal = (toppingCount - 1) * 2; }
     else {toppingTotal = 0;}
 
     runningTotal = (runningTotal + toppingTotal);
     console.log("Total number of toppings = " + toppingCount);
-    console.log(toppingCount + ' additional toppings minus 1 "free" topping = ' + '$' + toppingTotal + '.00');
+    console.log(toppingCount + ' toppings at $2 each minus 1 "free" topping = ' + '$' + toppingTotal + '.00');
     console.log("Choices made:" + text);
     console.log("Subtotal: " + "$" + runningTotal + ".00");
 
