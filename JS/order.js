@@ -50,7 +50,7 @@ function getToppings(runningTotal, text) {
     runningTotal = (runningTotal + toppingTotal);
     console.log("Total number of toppings = " + toppingCount);
     console.log(toppingCount + ' additional toppings minus 1 "free" topping = ' + '$' + toppingTotal + '.00');
-    console.log("Toppings chosen:" + text);
+    console.log("Choices made:" + text);
     console.log("Subtotal: " + "$" + runningTotal + ".00");
 
     document.getElementById("showText").innerHTML = text;
