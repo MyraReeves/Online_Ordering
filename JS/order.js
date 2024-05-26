@@ -1,3 +1,8 @@
+const viewOrder = document.getElementById('order');
+//Hide button after clicking it
+viewOrder.addEventListener('click', () => {
+    viewOrder.style.display = 'none';});
+
 
 function getReceipt() {
     const heading = "<h4>Your Order:</h4>"
@@ -34,6 +39,7 @@ function getReceipt() {
     console.log("Subtotal: $" + runningTotal + ".00");
     
     getToppings(runningTotal, text);
+
 }
 
 
