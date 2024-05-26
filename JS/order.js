@@ -67,6 +67,10 @@ function getToppings(runningTotal, text) {
     console.log("Choices made:" + text);
     console.log("Subtotal: " + "$" + runningTotal + ".00");
 
+    let taxTotal = (runningTotal * 0.09).toFixed(2);
+
     document.getElementById("showText").innerHTML = text;
-    document.getElementById("totalPrice").innerHTML = "<h4>Total due: <strong>$" + runningTotal + ".00" + "</strong></h4>";
+    document.getElementById("subtotal").innerHTML = "Subtotal: $" + runningTotal + ".00 <br>";
+    document.getElementById("tax").innerHTML = "Tax: $" + taxTotal + "<hr>"; 
+    document.getElementById("totalPrice").innerHTML = "Total due: $" + (parseFloat(runningTotal) + parseFloat(taxTotal));
 };
